@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnerItems" />
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/editTextTask"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="#B6B6B6" />
+
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:text="@string/remove"
+            android:textColor="#6E6E6E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="#B6B6B6" />
+
+        <Button
+            android:id="@+id/buttonClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="#B6B6B6" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
